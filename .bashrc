@@ -63,6 +63,7 @@ export VIMRC="${NVIM}/init.vim"
 export NVIMSESSION="${NVIM}/sessions"
 export NVIMSESSIONFILE="${NVIMSESSION}/sessionfile.vim"
 export TMUXRC="$HOMENVIMSESSION}/.tmux.conf"
+mkdir -p "$NVIMSESSION"
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
