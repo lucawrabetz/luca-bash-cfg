@@ -161,10 +161,9 @@ alias gfg='git ls-files | grep'
 alias gfo='git fetch origin'
 alias gg='git gui citool'
 alias gga='git gui citool --amend'
-alias ggpull='git pull origin (git symbolic-ref --short HEAD)'
-alias ggpur=ggu
-alias ggpush='git push origin (git symbolic-ref --short HEAD)'
-alias ggsup='git branch --set-upstream-to=origin/(git symbolic-ref --short HEAD)'
+alias ggpull='git pull origin $(git symbolic-ref --short HEAD)'
+alias ggpush='git push origin $(git symbolic-ref --short HEAD)'
+alias ggsup='git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD)'
 alias ghh='git help'
 alias gignore='git update-index --assume-unchanged'
 alias gignored='git ls-files -v | grep "^[[:lower:]]"'
@@ -304,3 +303,19 @@ alias iesums1="ssh ${IESUMS1}"
 alias iesums9="ssh ${IESUMS9}"
 alias iesums10="ssh ${IESUMS10}"
 alias iesums11="ssh ${IESUMS11}"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/luw28/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/luw28/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/luw28/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/luw28/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
