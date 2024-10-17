@@ -289,3 +289,18 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# SMOD04 specific from here on out
+# variables
+export PYTHON3="${HOME}/anaconda3/bin/python3"
+export IESUMS1="luw28@iesums1.ie.pitt.edu"
+export IESUMS9="luw28@iesums9.ie.pitt.edu"
+export IESUMS10="luw28@iesums10.ie.pitt.edu"
+export IESUMS11="luw28@iesums11.ie.pitt.edu"
+export GUROBI_HOME="${HOME}/gurobi950/linux64"
+
+# aliases
+alias iesums1="ssh ${IESUMS1}"
+alias iesums9="ssh ${IESUMS9}"
+alias iesums10="ssh ${IESUMS10}"
+alias iesums11="ssh ${IESUMS11}"
