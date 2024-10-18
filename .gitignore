@@ -1,0 +1,4 @@
+.cfg
+.config/*
+!.config/nvim
+.config/nvim/sessions/*
